@@ -6,7 +6,7 @@ type InventoryCardProps = {
 };
 export default function InventoryCard({ item }: InventoryCardProps) {
   return (
-    <section className="flex flex-col md:flex-row items-center gap-6 border border-green-500 p-4 rounded">
+    <article className="flex flex-col md:flex-row items-center gap-6 border border-green-500 p-4 rounded">
       <Image
         src={item.image}
         alt={item.name}
@@ -21,6 +21,6 @@ export default function InventoryCard({ item }: InventoryCardProps) {
         <p className="font-bold">{item.price}</p>
         <p className="text-xs">{item.category}</p>
       </div>
-    </section>
+    </article>
   );
 }

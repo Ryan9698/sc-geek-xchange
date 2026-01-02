@@ -4,15 +4,21 @@ import InventoryCard from "@/components/ui/InventoryCard";
 export default function Inventory() {
   return (
     <main className="p-4 max-w-4xl">
-      <section>
+      <header>
         <h1>Inventory</h1>
-        <h2>
-          Here at the XChange we offer an array of different collectibles for
-          both the budding hobbyish and the serious collector. Here are some of
-          the offerings that we have avaiable:
+        <p>
+          Here at the XChange we offer an array of collectibles for both casual
+          fans and serious collectors.
+        </p>
+      </header>
+
+      <section
+        aria-labelledby="inventory-items-heading"
+        className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2"
+      >
+        <h2 id="inventory-items-heading" className="sr-only">
+          Available items
         </h2>
-      </section>
-      <section className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
         {inventoryItems.map((item) => (
           <InventoryCard key={item.id} item={item} />
         ))}
