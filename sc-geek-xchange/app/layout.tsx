@@ -25,8 +25,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Nav />
+        <header>
+          <nav aria-label="Main navigation">
+            <Nav />
+          </nav>
+        </header>
         {children}
+        <footer>
+          <small>
+            &copy; {new Date().getFullYear()} Space Coast Geek XChange
+          </small>
+        </footer>
       </body>
     </html>
   );
