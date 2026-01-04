@@ -15,7 +15,7 @@ export default function InventoryCard({ item }: InventoryCardProps) {
         className="w-full h-auto"
       />
 
-      <div className="flex flex-col border rounded p-2 ">
+      <div className="bg-surface flex flex-col border rounded p-2 ">
         <h3 className="text-lg font-semibold">{item.name}</h3>
         <p className="text-sm">{item.description}</p>
         <p className="font-bold">{item.price}</p>
