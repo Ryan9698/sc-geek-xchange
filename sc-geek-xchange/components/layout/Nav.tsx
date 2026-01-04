@@ -16,11 +16,11 @@ export default function Nav() {
           <li key={item.href}>
             <Link
               href={item.href}
-              className={`text-sm transition ${
-                isActive
-                  ? "text-white font-semibold"
-                  : "text-zinc-400 hover:text-white"
-              }`}
+              // className={`text-sm transition ${
+              //   isActive
+              //     ? "text-white font-semibold"
+              //     : "text-zinc-400 hover:text-white"
+              // }`}
             >
               {item.label}
             </Link>
