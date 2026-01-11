@@ -1,15 +1,24 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/layout/Nav";
+import { Orbitron, Roboto, Inter } from "next/font/google";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+});
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+// const roboto = Roboto({
 //   subsets: ["latin"],
+//   variable: "--font-body",
+//   display: "swap",
 // });
 
 export const metadata: Metadata = {
@@ -23,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${orbitron.variable} ${inter.variable}`}>
       <body>
         <header>
           <nav aria-label="Main navigation">

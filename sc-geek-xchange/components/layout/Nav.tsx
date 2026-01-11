@@ -8,7 +8,7 @@ export default function Nav() {
   const pathname = usePathname();
 
   return (
-    <ul className="flex gap-6">
+    <ul className="flex gap-6 justify-center p-6">
       {navItems.map((item) => {
         const isActive = pathname === item.href;
 

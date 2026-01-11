@@ -7,8 +7,10 @@ export default function Home() {
     <section className="">
       <main>
         <header>
-          <h1>Welcome to the Space Coast Geek XChange!</h1>
-          <p>
+          <h1 className="text-3xl font-bold text-center p-4">
+            Welcome to the Space Coast Geek XChange!
+          </h1>
+          <p className="p-4 text-center mx-auto">
             We are a local business that offers pop culture collectibles for
             both the budding enthusiast and serious collectors. We offer
             memorabilia from somme of the most influential and iconic
