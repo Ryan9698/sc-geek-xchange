@@ -13,6 +13,10 @@ module.exports = {
       },
       colors: {
         surface: "var(--color-surface)",
+        accent: "var(--color-accent)",
+        bg: "var(--color-bg)",
+        text: "var(--color-text)",
+        muted: "var(--color-text-muted)",
       },
     },
   },

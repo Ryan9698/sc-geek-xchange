@@ -1,17 +1,31 @@
 // components/sections/Hero.tsx
 export default function Hero() {
   return (
-    <section className="py-24 text-center">
-      <h1 className="text-6xl ">Space</h1>
-      <h2 className="text-6xl mr-8">Coast</h2>
-      <h3 className="text-6xl ">Geek </h3>
-      <h4 className="text-4xl">XChange</h4>
-      <p className="text-4xl font-bold text-green-300">
-        Collectibles for True Geeks
-      </p>
-      <p className="mt-4 text-zinc-400">
-        Comics, figures, and fandom treasures
-      </p>
+    <section className="py-24 ">
+      <div className="mx-auto max-w-4xl grid gap-12 md:grid-cols-2 items-center text-center md:text-left">
+        {/* Left */}
+        <h1 className="font-heading leading-tight">
+          <span className="block text-4xl sm:text-5xl md:text-6xl">Space</span>
+          <span className="block text-4xl sm:text-5xl md:text-6xl md:ml-12">
+            Coast
+          </span>
+          <span className="block text-4xl sm:text-5xl md:text-6xl md:ml-24 text-accent">
+            Geek
+          </span>
+          <span className="block text-4xl md:text-6xl md:ml-32 text-accent">
+            XChange
+          </span>
+        </h1>
+        {/* Right */}
+        <div className="text-center">
+          <p className="font-heading text-2xl text-accent mb-4">
+            Buy · Sell · Trade
+          </p>
+          <p className="text-lg text-muted">
+            Comics, figures, and fandom treasures for true geeks.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
